@@ -47,17 +47,17 @@ export const biomeInstalledPackageJson = {
 // Sample biome.json data
 export const baseBiomeConfig = {
 	$schema: "https://biomejs.dev/schemas/1.9.4/schema.json",
-	extends: ["@xrryx/biome-config/base"],
+	extends: ["@unmett/biome-config/base"],
 };
 
 export const reactBiomeConfig = {
 	$schema: "https://biomejs.dev/schemas/1.9.4/schema.json",
-	extends: ["@xrryx/biome-config/react"],
+	extends: ["@unmett/biome-config/react"],
 };
 
 export const nextBiomeConfig = {
 	$schema: "https://biomejs.dev/schemas/1.9.4/schema.json",
-	extends: ["@xrryx/biome-config/next"],
+	extends: ["@unmett/biome-config/next"],
 };
 
 // Sample VS Code settings.json data
