@@ -1,5 +1,5 @@
 {
-	"name": "@xrryx/biome-config",
+	"name": "@unmett/biome-config",
 	"version": "1.4.3",
 	"description": "Shareable Biome configuration for JavaScript/TypeScript projects",
 	"keywords": [
@@ -14,10 +14,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/xrryx/biome-config.git"
+		"url": "git+https://github.com/unmett/biome-config.git"
 	},
 	"license": "MIT",
-	"author": "xrryx",
+	"author": "unmett",
 	"type": "module",
 	"exports": {
 		"./base": "./configs/base.json",
