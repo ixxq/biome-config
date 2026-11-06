@@ -111,44 +111,44 @@ describe("package-manager", () => {
 		it("should generate npm commands with grouped exact packages", () => {
 			const result = getInstallCommand("npm", [
 				"@biomejs/biome",
-				"@unmett/biome-config",
+				"@meltin/biome-config",
 			]);
 			expect(result).toEqual([
 				"npm i --save-dev --save-exact @biomejs/biome",
-				"npm i --save-dev @unmett/biome-config",
+				"npm i --save-dev @meltin/biome-config",
 			]);
 		});
 
 		it("should generate yarn commands with grouped exact packages", () => {
 			const result = getInstallCommand("yarn", [
 				"@biomejs/biome",
-				"@unmett/biome-config",
+				"@meltin/biome-config",
 			]);
 			expect(result).toEqual([
 				"yarn add --dev --exact @biomejs/biome",
-				"yarn add --dev @unmett/biome-config",
+				"yarn add --dev @meltin/biome-config",
 			]);
 		});
 
 		it("should generate pnpm commands with grouped exact packages", () => {
 			const result = getInstallCommand("pnpm", [
 				"@biomejs/biome",
-				"@unmett/biome-config",
+				"@meltin/biome-config",
 			]);
 			expect(result).toEqual([
 				"pnpm add --save-dev --save-exact @biomejs/biome",
-				"pnpm add --save-dev @unmett/biome-config",
+				"pnpm add --save-dev @meltin/biome-config",
 			]);
 		});
 
 		it("should generate bun commands with grouped exact packages", () => {
 			const result = getInstallCommand("bun", [
 				"@biomejs/biome",
-				"@unmett/biome-config",
+				"@meltin/biome-config",
 			]);
 			expect(result).toEqual([
 				"bun add --dev --exact @biomejs/biome",
-				"bun add --dev @unmett/biome-config",
+				"bun add --dev @meltin/biome-config",
 			]);
 		});
 
@@ -158,19 +158,19 @@ describe("package-manager", () => {
 		});
 
 		it("should handle single config package without exact flag", () => {
-			const result = getInstallCommand("npm", ["@unmett/biome-config"]);
-			expect(result).toEqual(["npm i --save-dev @unmett/biome-config"]);
+			const result = getInstallCommand("npm", ["@meltin/biome-config"]);
+			expect(result).toEqual(["npm i --save-dev @meltin/biome-config"]);
 		});
 
 		it("should group biome and prettier with exact flag", () => {
 			const result = getInstallCommand("npm", [
 				"@biomejs/biome",
 				"prettier",
-				"@unmett/biome-config",
+				"@meltin/biome-config",
 			]);
 			expect(result).toEqual([
 				"npm i --save-dev --save-exact @biomejs/biome prettier",
-				"npm i --save-dev @unmett/biome-config",
+				"npm i --save-dev @meltin/biome-config",
 			]);
 		});
 

@@ -1,8 +1,8 @@
-# @unmett/biome-config
+# @meltin/biome-config
 
 [English](./README.md) | Japanese
 
-[@unmett](https://github.com/unmett)による JavaScript/TypeScript プロジェクト用の共有可能な Biome 設定パッケージです。
+[@meltin](https://github.com/meltin)による JavaScript/TypeScript プロジェクト用の共有可能な Biome 設定パッケージです。
 
 プロジェクトタイプに応じて、base、React、Next.js の 3 つの設定から選択できます。
 
@@ -13,13 +13,13 @@
 プロジェクトに Biome をセットアップする最も簡単な方法は、インタラクティブな CLI ウィザードを使用することです：
 
 ```bash
-npx @unmett/biome-config
+npx @meltin/biome-config
 ```
 
 このコマンドは以下を実行します：
 
 - プロジェクトタイプの検出（base、React、または Next.js）
-- 必要な依存関係のインストール（`@biomejs/biome` と `@unmett/biome-config`）
+- 必要な依存関係のインストール（`@biomejs/biome` と `@meltin/biome-config`）
 - 適切な設定で `biome.json` または `biome.jsonc` を作成
 - `package.json` に Biome スクリプトを追加（`format`、`lint`、`lint-fix`、`check`）
 - `.vscode/settings.json` で VS Code 統合をセットアップ
@@ -32,7 +32,7 @@ npx @unmett/biome-config
 利用可能なすべてのオプションを確認するには：
 
 ```bash
-npx @unmett/biome-config --help
+npx @meltin/biome-config --help
 ```
 
 ### Manual Setup
@@ -42,7 +42,7 @@ npx @unmett/biome-config --help
 1. 必要なパッケージをインストール：
 
 ```bash
-npm i -D @biomejs/biome @unmett/biome-config
+npm i -D @biomejs/biome @meltin/biome-config
 ```
 
 2. プロジェクトルートに `biome.json` または `biome.jsonc` を作成：
@@ -52,7 +52,7 @@ npm i -D @biomejs/biome @unmett/biome-config
 ```json
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["@unmett/biome-config/base"]
+  "extends": ["@meltin/biome-config/base"]
 }
 ```
 
@@ -61,7 +61,7 @@ npm i -D @biomejs/biome @unmett/biome-config
 ```json
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["@unmett/biome-config/react"]
+  "extends": ["@meltin/biome-config/react"]
 }
 ```
 
@@ -70,7 +70,7 @@ npm i -D @biomejs/biome @unmett/biome-config
 ```json
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["@unmett/biome-config/next"]
+  "extends": ["@meltin/biome-config/next"]
 }
 ```
 
@@ -109,7 +109,7 @@ npm i -D @biomejs/biome @unmett/biome-config
 ```json
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["@unmett/biome-config/base"],
+  "extends": ["@meltin/biome-config/base"],
   "formatter": {
     "indentStyle": "space"
   }
@@ -118,4 +118,4 @@ npm i -D @biomejs/biome @unmett/biome-config
 
 ## License
 
-[MIT](./LICENSE) License © 2025-PRESENT [Kazuya Suzuki](https://github.com/unmett)
+[MIT](./LICENSE) License © 2025-PRESENT [Kazuya Suzuki](https://github.com/meltin)
