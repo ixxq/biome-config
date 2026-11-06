@@ -120,7 +120,7 @@ describe("logger", () => {
 
 		it("should display long commands correctly", () => {
 			const longCommand =
-				"npm install --save-dev @biomejs/biome @unmett/biome-config";
+				"npm install --save-dev @biomejs/biome @meltin/biome-config";
 			logger.code(longCommand);
 			expect(consoleLogSpy).toHaveBeenNthCalledWith(
 				2,
